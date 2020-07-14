@@ -1,0 +1,16 @@
+name:           Tests for Emacs
+description:    >
+    Tests for GNU Emacs
+schedule:
+  - '{{boot_to_desktop}}'
+  - x11/emacs/prepare
+  - x11/emacs/launch
+  - x11/emacs/fonts
+conditional_schedule:
+  boot_to_desktop:
+    BACKEND:
+      qemu:
+        - boot/boot_to_desktop
+      generalhw:
+        - jeos/prepare_firstboot
+        - jeos/firstrun
