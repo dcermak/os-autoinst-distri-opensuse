@@ -1,0 +1,8 @@
+---
+name:         i3_wm
+description:  >-
+  Tests for the i3 window manager
+schedule:
+  - boot/boot_to_desktop
+  - x11/i3/install
+  - x11/i3/login
