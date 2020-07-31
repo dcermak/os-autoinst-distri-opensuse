@@ -19,6 +19,8 @@ use utils;
 sub run() {
     # increase timeout to 15 mins, shouldn't take as long, but it occasionally does
     ensure_installed('rstudio MozillaFirefox', timeout => 900);
+    # FIXME: workaround until RStudio is updated in Factory (https://build.opensuse.org/request/show/823781)
+    ensure_installed('gcc gcc-c++');
 
     # setup git for later usage
     x11_start_program('xterm');
