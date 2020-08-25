@@ -1,0 +1,8 @@
+name:           mircoos_create_disk
+description:    >
+    create a microos disk for further testing
+schedule:
+  - boot/boot_to_desktop
+  - microos/install_stuff
+  - console/console_reboot
+  - boot/boot_to_desktop
