@@ -1,0 +1,6 @@
+name:           create_hdd_machinelearning
+description:    >
+    Creates a pre-configured disk image of the machinelearning appliance
+schedule:
+  - jeos/firstrun
+  - shutdown/shutdown

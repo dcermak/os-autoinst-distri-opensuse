@@ -1,0 +1,12 @@
+name: tensorflow
+description: >-
+  Test whether tensorflow is working
+conditional_schedule:
+  install_tensorflow:
+    FLAVOR:
+      DVD:
+        - machinelearning/install_tensorflow
+schedule:
+  - boot/boot_to_desktop
+  - '{{install_tensorflow}}'
+  - machinelearning/tensorflow
