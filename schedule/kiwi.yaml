@@ -1,0 +1,7 @@
+name:           kiwi
+description:    >
+    Functional tests for the kiwi staging images
+schedule:
+  - boot/boot_to_desktop
+  - console/console_reboot
+  - shutdown/shutdown
